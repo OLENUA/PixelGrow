@@ -5,33 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PixelGrow Media</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary-color: #0d6efd;
+      --dark-bg: #0e0e0e;
+      --light-bg: #f9f9f9;
+      --text-color: #333;
+      --footer-bg: #1c1c1c;
+      --footer-text: #ccc;
+    }
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.6;
     }
     header {
-      background: #0e0e0e;
+      background: var(--dark-bg);
       color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1em 2em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header h1 {
-      margin: 0;
       font-size: 1.5em;
     }
     nav a {
       color: white;
       margin-left: 1.5em;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: var(--primary-color);
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 0.5em;
+      }
+      nav a {
+        display: block;
+        margin: 0.5em 0;
+      }
     }
     main {
       max-width: 960px;
@@ -41,18 +69,45 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    .footer {
-      background: #1c1c1c;
-      color: #ccc;
+    main h2 {
       text-align: center;
-      padding: 1em 0;
+      color: var(--dark-bg);
+      margin-bottom: 1em;
+      font-size: 2em;
+    }
+    section {
+      margin-bottom: 1.5em;
+    }
+    section h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
+    }
+    p, ul {
+      margin-left: 1em;
+      margin-bottom: 1em;
+    }
+    ul li {
+      margin-bottom: 0.5em;
+    }
+    footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      text-align: center;
+      padding: 1.5em 2em;
       font-size: 0.9em;
       margin-top: 2em;
     }
-    .footer a {
-      color: #ccc;
-      margin: 0 1em;
-      text-decoration: underline;
+    footer a {
+      color: var(--footer-text);
+      margin: 0 0.5em;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    footer a:hover {
+      opacity: 1;
+      color: var(--primary-color);
     }
   </style>
 </head>
@@ -60,6 +115,7 @@
   <header>
     <h1>PixelGrow Media</h1>
     <nav>
+      <a href="/index.html">Home</a>
       <a href="/about.html">About Us</a>
       <a href="/products.html">Products</a>
       <a href="/login.html">Register / Login</a>
@@ -68,27 +124,35 @@
 
   <main>
     <h2>Welcome to PixelGrow Media</h2>
-    <p>At PixelGrow Media, we specialize in end-to-end digital marketing solutions that drive growth and engagement. Founded by industry veterans, we combine data-driven strategies, creative design, and cutting-edge technology to help SaaS startups, e-commerce brands, and B2B enterprises reach their full potential.</p>
+    <p>PixelGrow Media is a full-service digital marketing agency dedicated to helping businesses scale through data-driven strategies and creative excellence.</p>
+
     <section>
       <h3>Our Mission</h3>
-      <p>We believe in a pixel-perfect approach: every campaign element, from ad copy to audience targeting, is optimized for maximum ROI.</p>
+      <p>We strive to deliver measurable growth for our clients, leveraging cutting-edge marketing technologies and a pixel-perfect approach to campaign execution.</p>
     </section>
+
     <section>
-      <h3>What We Do</h3>
+      <h3>What We Offer</h3>
       <ul>
-        <li>Performance Advertising (Google, Facebook, LinkedIn)</li>
-        <li>Email Automation & Campaigns (Mailgun, SendGrid)</li>
-        <li>Creative & Content Production</li>
+        <li>Performance Advertising: Google, Facebook, LinkedIn</li>
+        <li>Email Marketing & Automation: Mailgun, SendGrid</li>
+        <li>Creative Content: Design, Copywriting, Video</li>
         <li>Analytics & Conversion Optimization</li>
       </ul>
     </section>
+
     <section>
       <h3>Why Choose Us?</h3>
-      <p>Our team acts as an extension of your product team, offering transparent reporting, agile execution, and a focus on sustainable growth.</p>
+      <p>Our team works as an extension of your product team, ensuring transparent reporting, agile iteration, and sustainable ROI.</p>
+    </section>
+
+    <section>
+      <h3>Get Started</h3>
+      <p>Ready to grow your product? <a href="/login.html">Register or Login</a> to begin your journey with us.</p>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 PixelGrow Media</p>
     <p>
       <a href="/privacy.html">Privacy Policy</a> |
