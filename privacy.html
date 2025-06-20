@@ -7,55 +7,119 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
       margin: 0;
-      padding: 2em;
-      max-width: 960px;
-      margin: auto;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
-    h1 {
+    header {
+      background: #0e0e0e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 960px;
+      margin: 2em auto;
+      padding: 2em;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
       text-align: center;
       color: #222;
     }
     section {
       margin-bottom: 2em;
     }
+    footer {
+      background: #1c1c1c;
+      color: #ccc;
+      text-align: center;
+      padding: 1em 0;
+      font-size: 0.9em;
+      margin-top: 2em;
+    }
+    footer a {
+      color: #ccc;
+      margin: 0 1em;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
+  <header>
+    <h1>PixelGrow Media</h1>
+    <nav>
+      <a href="/about.html">About Us</a>
+      <a href="/products.html">Products</a>
+      <a href="/login.html">Register / Login</a>
+    </nav>
+  </header>
 
-  <section>
-    <h2>Introduction</h2>
-    <p>This Privacy Policy describes how PixelGrow Media collects, uses, and protects your personal data when you visit our website.</p>
-  </section>
+  <main>
+    <h1>Privacy Policy</h1>
+    <section>
+      <h2>Introduction</h2>
+      <p>PixelGrow Media (“we”, “our”, “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose information when you visit <a href="https://pixelgrowmedia.com">pixelgrowmedia.com</a>.</p>
+    </section>
 
-  <section>
-    <h2>Information We Collect</h2>
-    <ul>
-      <li>Contact information (such as name and email address)</li>
-      <li>Analytics data (via cookies and third-party services)</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Information We Collect</h2>
+      <ul>
+        <li><strong>Personal Data:</strong> name, email address, and contact details you provide when contacting us.</li>
+        <li><strong>Usage Data:</strong> analytics data (e.g., pages visited, time on site) collected via cookies and third-party services like Google Analytics.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>How We Use Information</h2>
-    <p>We use the information we collect to:</p>
-    <ul>
-      <li>Respond to inquiries</li>
-      <li>Improve our website and services</li>
-      <li>Send marketing communications (if you opt in)</li>
-    </ul>
-  </section>
+    <section>
+      <h2>How We Use Your Data</h2>
+      <p>We use collected data to:</p>
+      <ul>
+        <li>Respond to inquiries and provide services.</li>
+        <li>Improve and optimize our website.</li>
+        <li>Send marketing communications if you opt in.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Your Rights</h2>
-    <p>You have the right to access, update, or delete your personal information. To do so, please contact us at contact@pixelgrowmedia.com.</p>
-  </section>
+    <section>
+      <h2>Cookies & Tracking</h2>
+      <p>We use cookies to enhance site functionality and track visitor behavior. You can disable cookies via your browser settings, but this may affect site performance.</p>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>If you have any questions about this Privacy Policy, contact us at <a href="mailto:contact@pixelgrowmedia.com">contact@pixelgrowmedia.com</a>.</p>
-  </section>
+    <section>
+      <h2>Your Rights</h2>
+      <p>You have the right to access, correct, or delete your personal data. To exercise these rights, please contact us at <a href="mailto:contact@pixelgrowmedia.com">contact@pixelgrowmedia.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted here with a revised date.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PixelGrow Media</p>
+    <p>
+      <a href="/privacy.html">Privacy Policy</a> |
+      <a href="/terms.html">Terms of Service</a>
+    </p>
+  </footer>
 </body>
 </html>
