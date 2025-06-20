@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelGrow Media</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>PixelGrow Media</h1>
+    <p>We help your product grow — pixel by pixel.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Хто ми</h2>
+      <p>PixelGrow Media — це агентство цифрового маркетингу, яке допомагає стартапам і малому бізнесу зростати онлайн.</p>
+    </section>
+
+    <section>
+      <h2>Наші послуги</h2>
+      <ul>
+        <li>Реклама в Google, Facebook, TikTok</li>
+        <li>Email-маркетинг (Mailgun, SendGrid)</li>
+        <li>Контент і креатив</li>
+        <li>Аналітика та A/B тести</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Контакти</h2>
+      <p>Email: <a href="mailto:contact@pixelgrowmedia.com">contact@pixelgrowmedia.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PixelGrow Media</p>
+  </footer>
+</body>
+</html>
