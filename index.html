@@ -10,10 +10,12 @@
       --dark-bg: #0e0e0e;
       --light-bg: #f9f9f9;
       --text-color: #333;
+      --banner-bg: #ffc107;
+      --banner-text: #0e0e0e;
       --footer-bg: #1c1c1c;
       --footer-text: #ccc;
     }
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -48,22 +50,20 @@
     nav a:hover {
       color: var(--primary-color);
     }
+    .banner {
+      background: var(--banner-bg);
+      color: var(--banner-text);
+      text-align: center;
+      padding: 0.75em;
+      font-weight: bold;
+    }
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav {
-        margin-top: 0.5em;
-      }
-      nav a {
-        display: block;
-        margin: 0.5em 0;
-      }
+      header { flex-direction: column; text-align: center; }
+      nav a { display: block; margin: 0.5em 0; }
     }
     main {
       max-width: 960px;
-      margin: 2em auto;
+      margin: 1em auto;
       padding: 2em;
       background: white;
       border-radius: 8px;
@@ -121,7 +121,7 @@
       <a href="/login.html">Register / Login</a>
     </nav>
   </header>
-
+  <div class="banner">🚧 Our site is under construction — we're working on something awesome! 🚧</div>
   <main>
     <h2>Welcome to PixelGrow Media</h2>
     <p>PixelGrow Media is a full-service digital marketing agency dedicated to helping businesses scale through data-driven strategies and creative excellence.</p>
@@ -151,13 +151,9 @@
       <p>Ready to grow your product? <a href="/login.html">Register or Login</a> to begin your journey with us.</p>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 PixelGrow Media</p>
-    <p>
-      <a href="/privacy.html">Privacy Policy</a> |
-      <a href="/terms.html">Terms of Service</a>
-    </p>
+    <p><a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
   </footer>
 </body>
 </html>
