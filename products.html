@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - PixelGrow Media</title>
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --dark-bg: #0e0e0e;
+      --light-bg: #f9f9f9;
+      --text-color: #333;
+      --footer-bg: #1c1c1c;
+      --footer-text: #ccc;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--dark-bg);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { font-size: 1.5em; }
+    nav a {
+      color: white;
+      margin-left: 1.5em;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: var(--primary-color); }
+    @media (max-width: 600px) {
+      header { flex-direction: column; text-align: center; }
+      nav a { display: block; margin: 0.5em 0; }
+    }
+    main {
+      max-width: 960px;
+      margin: 2em auto;
+      padding: 2em;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      color: var(--dark-bg);
+      margin-bottom: 1em;
+      font-size: 2em;
+    }
+    .product {
+      margin-bottom: 1.5em;
+    }
+    .product h2 {
+      color: var(--primary-color);
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    .product p {
+      margin-left: 1em;
+    }
+    footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      text-align: center;
+      padding: 1.5em 2em;
+      font-size: 0.9em;
+      margin-top: 2em;
+    }
+    footer a {
+      color: var(--footer-text);
+      margin: 0 0.5em;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    footer a:hover { opacity: 1; color: var(--primary-color); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PixelGrow Media</h1>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About Us</a>
+      <a href="/products.html">Products</a>
+      <a href="/contact.html">Contact Us</a>
+      <a href="/login.html">Register / Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Products</h1>
+
+    <div class="product">
+      <h2>AdPulse Pro</h2>
+      <p>AdPulse Pro is our flagship performance-advertising platform. Automate bid management, A/B test creatives, and scale campaigns across Google, Facebook, and LinkedIn.</p>
+    </div>
+
+    <div class="product">
+      <h2>MailMaster</h2>
+      <p>MailMaster simplifies email marketing and automation. Integrate with Mailgun or SendGrid to send transactional alerts, drip campaigns, and personalized newsletters to your opt-in list.</p>
+    </div>
+
+    <div class="product">
+      <h2>CreativeSpark</h2>
+      <p>CreativeSpark offers on-demand content creation: from banner designs to video snippets and copywriting. Get conversion-focused assets crafted by our in-house creative team.</p>
+    </div>
+
+    <div class="product">
+      <h2>InsightAnalytics</h2>
+      <p>InsightAnalytics delivers deep dive analytics and conversion tracking. Visualize user journeys, set up GA4 & GTM events, and optimize funnels with actionable reports.</p>
+    </div>
+
+    <div class="product">
+      <h2>GrowthGuard</h2>
+      <p>GrowthGuard is our anti-fraud and deliverability monitoring tool. Keep your IP reputation clean, detect honeypots, and receive real-time alerts on deliverability issues.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PixelGrow Media</p>
+    <p><a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
